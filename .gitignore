@@ -1,0 +1,46 @@
+# Secrets / private runtime — never commit
+*.pem
+*.key
+!**/server_ed25519.key.example
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+relaykey.bin
+**/05_PRIVATE/
+**/private/
+**/*secret*
+**/*credentials*
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env.venv/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local customer builds (if created inside kit by mistake)
+**/CUSTOMER_BUILD_*/
+**/_work/
+**/out/
+**/dist_customer/
+
+# Git / archives
+*.zip.bak

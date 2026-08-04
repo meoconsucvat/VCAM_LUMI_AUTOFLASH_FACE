@@ -1,0 +1,12 @@
+{
+  "base_url": "https://vc.kimiki.bond/vcam",
+  "ed25519_public_key_b64": "sjuXUHVjsQSOYVSBlYSFdRgdrgJAC9wTY5tsNDAkbv0=",
+  "ed25519_public_key_hex": "b23b97507563b1048e61548195848575181dae02400bdc13639b6c3430246efd",
+  "spki_pin": "pOObhSPWvs0SIY6T6svQjPc0yW6zpEzp0rfclON1pOg=",
+  "backup_spki_pin": "pOObhSPWvs0SIY6T6svQjPc0yW6zpEzp0rfclON1pOg=",
+  "brand_changed": false,
+  "notes": [
+    "URL is exactly 27 UTF-8 bytes.",
+    "This file contains public identity material only. The Ed25519 private key stays on the VPS."
+  ]
+}

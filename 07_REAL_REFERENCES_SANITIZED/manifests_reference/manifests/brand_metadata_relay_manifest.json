@@ -1,0 +1,58 @@
+{
+  "format": "vcam-kimiki-brand-metadata-relay-only-v1",
+  "created_at_utc": "2026-08-04T09:12:00Z",
+  "scope": {
+    "deb_control_metadata_only": true,
+    "relay_contact_only": true,
+    "ui_dylib_brand_unchanged": true,
+    "watermark_unchanged": true,
+    "backend_code_marker_unchanged": "tele: @lumierephan"
+  },
+  "deb": {
+    "source": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe.deb",
+    "output": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand12_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe_vcamplus_metadata.deb",
+    "sha256_before": "be6c7360d5aafd333ed06727b84eaf67f76a3283767c7228b1bd4b71a1c4adeb",
+    "sha256_after": "f91df0a4829532cf0c68267a014cb0e528874fef12231779c432ec506c26f4be",
+    "control_member": "control.tar.xz",
+    "control_changes": {
+      "Name": {
+        "old": "VcamLumiere",
+        "new": "VcamPlus"
+      },
+      "Description": {
+        "old": "Professional Virtual Camera & RTMP Streaming Engine for iOS By LumierePhan",
+        "new": "Professional Virtual Camera & RTMP Streaming Engine for iOS By VcamPlus"
+      },
+      "Maintainer": {
+        "old": "LumierePhan",
+        "new": "VcamPlus"
+      },
+      "Author": {
+        "old": "LumierePhan",
+        "new": "VcamPlus"
+      }
+    }
+  },
+  "relay": {
+    "source": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_20260804\\relay\\relay.exe",
+    "output": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand12_20260804\\relay\\relay.exe",
+    "sha256_before": "e98a8659cce6673d237cc237967307b1d1dfff246456e1f4b292018f80b3fd6f",
+    "sha256_after": "4263160ff6245d329977458a8d385b5ceab60bb4fd3649b2fef0c33bc5568c4e",
+    "old_contact": "@lumierephan",
+    "new_contact_padded": "@vcamplus   ",
+    "offsets": [
+      "0x39fbbd",
+      "0x3abcaa",
+      "0x3ae4ff",
+      "0x3af91d",
+      "0x3b41bf"
+    ],
+    "occurrences": 5
+  },
+  "notes": [
+    "Package id is intentionally unchanged: com.lumiere.vcamlumiere.",
+    "UI dylib brand strings are intentionally not patched in this step.",
+    "Because UI brand is unchanged, backend VCAM_CODE_MARKER must remain tele: @lumierephan.",
+    "Relay contact is padded to preserve binary layout."
+  ]
+}

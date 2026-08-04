@@ -1,0 +1,48 @@
+{
+  "format": "vcam-kimiki-v22031-nored-test-v1",
+  "created_at_utc": "2026-08-04T09:43:40Z",
+  "input_deb": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand123_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe_vcamplus_metadata_ui_marker_vcamplus.deb",
+  "output_deb": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand123_nored_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe_vcamplus_metadata_ui_marker_vcamplus_nored_test.deb",
+  "input_sha256": "b1a3c6f5723c499aeb72ecf67bd846afe5933146baf1ef617657efd42b3ebd53",
+  "output_sha256": "a94a8464a5370bdbb318ff6b4be672639c26ade4d86424838dccaa0e29c624e1",
+  "patched_file": "./var/jb/Library/MobileSubstrate/DynamicLibraries/VcamLumiereUI.dylib",
+  "ui_sha256_before": "04f30ca0686cb1254a868303f5bae1df9f385a5911209ad28b8aab0c36b6927a",
+  "ui_sha256_after": "3e72501734af9da587054acbefdcc15da0b8e65e187fad7563698aab3ef4782a",
+  "sensor_plist_present": true,
+  "patches": [
+    {
+      "arch": "arm64",
+      "thin_addr": "0xa068",
+      "file_offset": "0xe068",
+      "old_bytes": "eb2bbb6d",
+      "new_bytes": "c0035fd6",
+      "reason": "Return immediately from shifted imageWithActions/drawAtPoint watermark block in VcamLumiereUI 2.2.031 arm64."
+    },
+    {
+      "arch": "arm64e",
+      "thin_addr": "0xa548",
+      "file_offset": "0x42548",
+      "old_bytes": "7f2303d5",
+      "new_bytes": "c0035fd6",
+      "reason": "Return immediately from shifted imageWithActions/drawAtPoint watermark block in VcamLumiereUI 2.2.031 arm64e."
+    }
+  ],
+  "changed_ranges": [
+    {
+      "offset_start": "0xe068",
+      "offset_end_exclusive": "0xe06c",
+      "length": 4
+    },
+    {
+      "offset_start": "0x42548",
+      "offset_end_exclusive": "0x4254c",
+      "length": 4
+    }
+  ],
+  "notes": [
+    "Built on top of Kimiki safe brand123 DEB: metadata + relay contact + UI marker already applied.",
+    "Offsets are not copied from 2.1.08 directly; they were remapped on VcamLumiereUI 2.2.031 by matching the shifted imageWithActions/drawAtPoint block.",
+    "This is a test artifact until physical iPhone confirms menu/login/stream/no-red behavior.",
+    "VcamLumiereSensor.plist is intentionally preserved."
+  ]
+}

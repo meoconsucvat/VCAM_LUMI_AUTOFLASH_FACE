@@ -1,0 +1,71 @@
+{
+  "format": "vcam-ui-marker-safe-v1",
+  "created_at_utc": "2026-08-04T09:25:13Z",
+  "scope": {
+    "ui_dylib_marker_only": true,
+    "daemon_unchanged": true,
+    "control_metadata_unchanged_from_input": true,
+    "relay_unchanged": true,
+    "watermark_unchanged": true
+  },
+  "input_deb": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand12_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe_vcamplus_metadata.deb",
+  "output_deb": "C:\\Users\\Admin\\Desktop\\Vcam_LumierePhan\\artifacts_kimiki_safe_brand123_20260804\\com.lumiere.vcamlumiere_2.2.031_kimiki_universal_safe_vcamplus_metadata_ui_marker_vcamplus.deb",
+  "sha256_before_deb": "f91df0a4829532cf0c68267a014cb0e528874fef12231779c432ec506c26f4be",
+  "sha256_after_deb": "b1a3c6f5723c499aeb72ecf67bd846afe5933146baf1ef617657efd42b3ebd53",
+  "ui": {
+    "sha256_before": "e0f65b386b307abf1511da31ae5e2b40c3d147ce85058e617b2218025c6d5be4",
+    "sha256_after": "04f30ca0686cb1254a868303f5bae1df9f385a5911209ad28b8aab0c36b6927a",
+    "decoded_before": {
+      "arm64_ui_marker": "tele: @lumierephan",
+      "arm64e_ui_marker": "tele: @lumierephan"
+    },
+    "decoded_after": {
+      "arm64_ui_marker": "tele: @vcamplus   ",
+      "arm64e_ui_marker": "tele: @vcamplus   "
+    },
+    "changed_ranges": [
+      {
+        "offset_start": "0x1cb76",
+        "offset_end_exclusive": "0x1cb9a",
+        "length": 36
+      },
+      {
+        "offset_start": "0x4e0b6",
+        "offset_end_exclusive": "0x4e0da",
+        "length": 36
+      }
+    ],
+    "table_diffs": {
+      "0x1c1e8": [],
+      "0x4d728": []
+    },
+    "fields": {
+      "arm64_ui_marker": {
+        "fat_base": 16384,
+        "table": 98792,
+        "seed": 99819,
+        "nonce": 101230,
+        "indices": 101238,
+        "length": 18
+      },
+      "arm64e_ui_marker": {
+        "fat_base": 212992,
+        "table": 104232,
+        "seed": 105259,
+        "nonce": 106670,
+        "indices": 106678,
+        "length": 18
+      }
+    }
+  },
+  "backend": {
+    "old_marker": "tele: @lumierephan",
+    "new_marker_exact": "tele: @vcamplus   ",
+    "required_policy": "Backend must accept the new marker for login signatures. Prefer accepting both old and new markers during migration."
+  },
+  "notes": [
+    "New marker is padded to 18 bytes to preserve UI binary layout.",
+    "Do not change com.lumiere.* notification/channel strings in this stage.",
+    "If backend accepts only the old marker, this DEB will login with bad_signature."
+  ]
+}

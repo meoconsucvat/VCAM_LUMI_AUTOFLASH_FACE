@@ -1,0 +1,17 @@
+[Unit]
+Description=<PROJECT_NAME> VCAM Backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/<PROJECT_NAME>
+EnvironmentFile=/opt/<PROJECT_NAME>/.env
+ExecStart=/opt/<PROJECT_NAME>/venv/bin/python /opt/<PROJECT_NAME>/app.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
