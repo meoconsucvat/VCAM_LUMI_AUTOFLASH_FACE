@@ -1,0 +1,19 @@
+PROPRIETARY — ALL RIGHTS RESERVED
+
+Copyright (c) 2026 Repository owner (meoconsucvat) and authorized operators.
+
+This repository is a private engineering handoff kit. It is not open source.
+
+You may:
+  - clone and use the kit for authorized customer project builds;
+  - modify copies inside private customer project workspaces.
+
+You may not:
+  - publish this repository or its contents publicly;
+  - redistribute baseline binaries, patch tools, or customer builds to unauthorized parties;
+  - include production secrets, private keys, or customer personal data in commits.
+
+Customer-facing packages must contain only the approved deliverables defined in
+06_OUTPUT_EXPECTED/ and 04_CUSTOMER_PACKAGE_TEMPLATE/.
+
+No warranty. Use at your own risk on authorized systems only.
